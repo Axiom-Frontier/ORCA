@@ -1,0 +1,38 @@
+## feature/imd-bulletin-parser
+?? git-log.txt
+?? git-report.txt
+* feature/imd-bulletin-parser 539ca44 Add IMD coastal bulletin parser with stale-data check
+  main                        1cd965b Record pytest result
+Latest commit: 539ca443f877165319ee02f99c273844f7d82d64
+Commit message: Add IMD coastal bulletin parser with stale-data check
+Author: Anurag Chand
+Date: Tue Oct 20 09:16:42 2026
+ app.py                               |  64 ++++++++++-
+ docs/data_sources.md                 |  35 ++++--
+ docs/decisions.md                    |   7 ++
+ docs/testing.md                      |   3 +-
+ src/models/__init__.py               |   8 +-
+ src/models/records.py                |  26 +++++
+ src/services/__init__.py             |   4 +-
+ src/services/bulletin.py             |  46 ++++++++
+ src/sources/__init__.py              |   6 +-
+ src/sources/adapters/__init__.py     |   3 +-
+ src/sources/adapters/imd_bulletin.py | 215 +++++++++++++++++++++++++++++++++++
+ src/sources/registry.py              |  22 ++++
+ tests/test_imd_bulletin.py           | 189 ++++++++++++++++++++++++++++++
+ 13 files changed, 606 insertions(+), 22 deletions(-)
+539ca44 Add IMD coastal bulletin parser with stale-data check
+ app.py                               |  64 ++++++++++-
+ docs/data_sources.md                 |  35 ++++--
+ docs/decisions.md                    |   7 ++
+ docs/testing.md                      |   3 +-
+ src/models/__init__.py               |   8 +-
+ src/models/records.py                |  26 +++++
+ src/services/__init__.py             |   4 +-
+ src/services/bulletin.py             |  46 ++++++++
+ src/sources/__init__.py              |   6 +-
+ src/sources/adapters/__init__.py     |   3 +-
+ src/sources/adapters/imd_bulletin.py | 215 +++++++++++++++++++++++++++++++++++
+ src/sources/registry.py              |  22 ++++
+ tests/test_imd_bulletin.py           | 189 ++++++++++++++++++++++++++++++
+ 13 files changed, 606 insertions(+), 22 deletions(-)
